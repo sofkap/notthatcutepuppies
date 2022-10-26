@@ -18,10 +18,14 @@
     c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
     })(document);
     smartlook('init', '2a28d1d4bb63b20ab485a10185d53b0394b5f903', { region: 'eu' });
-</script>
 		smartlook('identify', userId)
 		smartlook('properties', { 'package': 'free', 'environment': 'production' })
 		smartlook('record', { forms: true, emails: true, ips: true, numbers: true, api: true })
+</script>
+		<script>
+
+  smartlook('track', 'Survicate', 'answer', 'question', 'response_uuid', 'survey.id', 'survey.name', 'registered');
+
 </script>
 		<script type="text/javascript">
   (function(opts) {
